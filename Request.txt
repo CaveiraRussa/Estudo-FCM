@@ -1,0 +1,43 @@
+Post = https://fcm.googleapis.com/fcm/send
+Adicionar 2 headers
+Authorization = Key"Server Key do projeto no FCM"
+Content-Type = application/json
+
+
+Usuario unico:
+
+{ 
+ "to": "Token do Usuario",
+ "notification" : {
+ "body" : "great match!",
+ "content_available" : true,
+ "priority" : "high",
+ "title" : "Portugal vs. Denmark"
+ },
+ "data" : {
+ "body" : "great match!",
+ "content_available" : true,
+ "priority" : "high",
+ "title" : "Portugal vs. Denmark"
+ }
+}
+
+Multiplos:
+
+Usuario unico:
+
+{ 
+ "to": "topics/nome do topico criado",
+ "notification" : {
+ "body" : "great match!",
+ "content_available" : true,
+ "priority" : "high",
+ "title" : "Portugal vs. Denmark"
+ },
+ "data" : {
+ "body" : "great match!",
+ "content_available" : true,
+ "priority" : "high",
+ "title" : "Portugal vs. Denmark"
+ }
+}
