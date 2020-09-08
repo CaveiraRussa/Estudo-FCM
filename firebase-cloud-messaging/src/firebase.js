@@ -1,6 +1,5 @@
 import * as firebase from "firebase/app";
 import "firebase/messaging";
-import "firebase/analytics";
 
 
 const config ={
@@ -11,9 +10,7 @@ const config ={
     storageBucket: "fir-cloud-messaging-379af.appspot.com",
     messagingSenderId: "1081227225213",
     appId: "1:1081227225213:web:1afe53577d982bbd6b2914",
-    measurementId: "G-1C3M64FG6L"
 
 };
 firebase.initializeApp(config)
-firebase.analytics();
 export default firebase
