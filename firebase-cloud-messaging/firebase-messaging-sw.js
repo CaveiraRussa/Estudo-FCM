@@ -1,6 +1,8 @@
 importScripts ('https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js')
 importScripts('https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js')
 importScripts ('https://www.gstatic.com/firebasejs/7.19.1/firebase-messaging.js')
+importScripts (' https://iid.googleapis.com/iid/v1/<REGISTRATION_TOKEN>/rel/topics/<TOPIC_NAME>')
+
 
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('../firebase-messaging-sw.js')

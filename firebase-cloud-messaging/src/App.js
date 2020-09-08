@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import firebase from './firebase'
+import * as firebase from "firebase/app";
+import "firebase/messaging";
 
 export default class App extends Component{
   constructor(props){
@@ -8,6 +9,7 @@ export default class App extends Component{
 
     }
   }
+  
   componentDidMount(){
     const messaging = firebase.messaging()
     messaging.requestPermission().then(()=>{
